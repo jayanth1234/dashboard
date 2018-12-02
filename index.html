@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="iconfont/material-icons.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/custom_styles.css"  media="screen,projection"/>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <ul id="slide-out" class="side-nav fixed grey darken-3">
+        <li style="margin-top: 20px;"></li>
+        <li class="nav-item"><i class="material-icons" style="color: lightgrey">dashboard</i>
+            <span class="nav-icon" style="">Overview</span>
+        </li>
+        <li class="nav-item"><i class="material-icons" style="color: lightgrey">assignment_ind</i>
+            <span class="nav-icon" style="">Candidates</span>
+        </li>
+        <li class="nav-item"><i class="material-icons" style="color: lightgrey">timeline</i>
+            <span class="nav-icon" style="">Analytics</span>
+        </li>
+      </ul>
+
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper white">
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons black-text">menu</i></a>
+             <div class="row">
+                 <img src="img/business-support-2-b.png" style="height: 70px; padding: 10px;" alt="">
+             </div>
+             
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <!-- Page Content goes here -->
+        <div class="row">
+          <div class="col s12 m6 l7 offset-m3">
+
+            <div class="card card-1">
+              <div class="card-content card-title">
+                <i class="material-icons grey-text text-darken-1 left">remove_red_eye</i>
+                <span class="bold">Candidate Profile: Syd Barret</span>
+                <a class="waves-effect waves-light btn-flat right"><i class="material-icons">keyboard_arrow_right</i></a>
+                <a class="waves-effect waves-light btn-flat right"><i class="material-icons">keyboard_arrow_left</i></a>
+              </div>
+              <div class="divider"></div>
+              <div class="card-content">
+                  <div class="row">
+                      <div class="col l7" style="border-right: 1px solid #e0e0e0">
+                          <span style="color: dodgerblue; font-weight: 600">Experience:</span>
+                          <div class="card-content" style="margin-left: -16px;">
+                              <li style="margin-bottom: 12px;">2014-2016 - Senior Software Engineer,
+                              <span style="margin-left: 19px">Google</span></li>
+                              <li>2012-2014 - Software Engineer, Microsoft</li>
+                              <div style="margin-top: 35px;">
+                                  <i style="margin-left: -16px;" class="material-icons">insert_drive_file</i>
+                                  <span style="">SYD+BARRET_Bengaluru.docx</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col l5">
+                          <span style="color: dodgerblue; font-weight: 600">Highlights:</span>
+                          <div class="card-content" style="margin-left: -16px;">
+                              <li style="margin-bottom: 12px;">
+                                  Filed three patents
+                              </li>
+                              <li>
+                                  Filed an HPCA paper on Multicore Architecture
+                              </li>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col s12 m6 l5 offset-m3">
+            <div class="card">
+              <div class="card-content card-title valign-wrapper">
+                <i class="valign material-icons grey-text text-darken-1 left">hourglass_empty</i>
+                <span class="bold">Resume processing queue</span>
+              </div>
+              <div class="divider"></div>
+              <div class="card-content">
+                <div class="section">
+                  <p>DAVID+GILMOUR_Bengaluru.docx</p>
+                  <div class="progress  blue lighten-4">
+                    <div class="determinate blue" style="width: 100%"></div>
+                  </div>
+                </div>
+                <div class="section">
+                  <p>ROGERS+WATERS.docx.pdf</p>
+                  <div class="progress  blue lighten-4">
+                    <div class="determinate blue" style="width: 100%"></div>
+                  </div>
+                </div>
+                <div class="section">
+                  <p>NICK+MASON.docx.pdf</p>
+                  <div class="progress  blue lighten-4">
+                    <div class="determinate blue" style="width: 100%"></div>
+                  </div>
+                </div>
+                <div class="section">
+                  <p>RICHARD+WRIGHT.docx</p>
+                  <div class="progress  blue lighten-4">
+                    <div class="determinate blue" style="width: 100%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col s12 m6 l7 offset-m3">
+            <div class="card" style="height: 540px;">
+              <div class="card-content card-title valign-wrapper">
+                <i class="material-icons">error_outline</i>
+                <span class="bold" style="margin-left: 12px;">CGPA Histogram</span>
+              </div>
+              <div class="divider"></div>
+              <div class="card-content">
+                <div class="section">
+                  <div class="chart-container">
+                    <canvas style="margin-left: -10px;width: 100%; height: 75%" id="bar-chartcanvas"></canvas>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col s12 m6 l5 offset-m3">
+            <div class="card">
+              <div class="card-content card-title valign-wrapper">
+                <i class="material-icons">school</i>
+                <span class="bold" style="margin-left: 12px;">Top Schools</span>
+              </div>
+              <div class="divider"></div>
+              <div class="card-content">
+                  <div class="row table-head">
+                    <span style="float: left; padding: 0 8px;">Schools</span>
+                    <span style="float: right; padding: 0 8px;">Applicants</span>
+                  </div>
+                  <div class="divider"></div>
+                  <div>
+                     <div style="margin-bottom: 20px;">
+                         <span style="float: left" id="one"></span>
+                         <span style="float: right" id="one-app"></span>
+                     </div><br>
+                     
+                         <div class="divider"></div>
+                     <div style="margin-top: 10px; margin-bottom: 20px;">
+                         <span style="float: left" id="two"></span>
+                         <span style="float: right" id="two-app"></span>
+                     </div><br>
+                     
+                         <div class="divider"></div>
+                     <div style="margin-top: 10px; margin-bottom: 20px;">
+                         <span style="float: left" id="three"></span>
+                         <span style="float: right" id="three-app"></span>
+                     </div><br>
+                     
+                         <div class="divider"></div>
+                     <div style="margin-top: 10px; margin-bottom: 20px;">
+                         <span style="float: left" id="four"></span>
+                         <span style="float: right" id="four-app"></span>
+                     </div><br>
+                     
+                         <div class="divider"></div>
+                     <div style="margin-top: 10px; margin-bottom: 20px;">
+                         <span style="float: left" id="five"></span>
+                         <span style="float: right" id="five-app"></span>
+                     </div><br>
+                     <div class="divider"></div>
+                     <div style="margin-top: 10px; margin-bottom: 20px;">
+                         <span style="float: left" id="six"></span>
+                         <span style="float: right" id="six-app"></span>
+                     </div><br>
+                     
+                         <div class="divider"></div>
+                      <div style="margin-top: 10px; margin-bottom: 20px;">
+                         <span style="float: left" id="seven"></span>
+                         <span style="float: right" id="seven-app"></span>
+                     </div><br>
+                     
+                         <div class="divider"></div>
+                     <div style="margin-top: 10px; margin-bottom: 20px;">
+                         <span style="float: left" id="eight"></span>
+                         <span style="float: right" id="eight-app"></span>
+                     </div><br>
+                     
+                         <div class="divider"></div>
+                     <div style="margin-top: 10px; margin-bottom: 20px;">
+                         <span style="float: left" id="nine"></span>
+                         <span style="float: right" id="nine-app"></span>
+                     </div>
+                     
+                  </div>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/Chart_js.js"></script>
+    <script type="text/javascript" src="js/custom_js.js"></script>
+  </body>
+</html>
